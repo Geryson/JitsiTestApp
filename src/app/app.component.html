@@ -1,0 +1,32 @@
+<h1>Jitsi Angular Test</h1>
+<div id="meet"></div>
+<hr/>
+<table>
+  <tr class="ja-bold">
+    <td>Environment type</td>
+    <td>Region</td>
+    <td>Shard</td>
+  </tr>
+  <tr>
+    <td>{{envType}}</td>
+    <td>{{region}}</td>
+    <td>{{shard}}</td>
+  </tr>
+</table>
+<button (click)="requestDeploymentInfo()">Request deployment info</button>
+<table>
+  <tr class="ja-bold">
+    <td>Browser supported</td>
+    <td>Mouse position</td>
+    <td>Display name changed</td>
+    <td>Camera status</td>
+  </tr>
+  <tr>
+    <td>{{browserSupported ? 'Yes' : 'No'}}</td>
+    <td>{{mouseIsInFrame ? 'In the frame' : 'Out of the frame'}}</td>
+    <td>{{displayNameIsChanged ? 'Changed (' + displayName + ')' : 'Not yet...'}}</td>
+    <td>{{cameraIsOn ? '🟢' : '🔴'}}</td>
+  </tr>
+</table>
+
+<button (click)="toggleVideoDevice()">Camera on / off</button>
