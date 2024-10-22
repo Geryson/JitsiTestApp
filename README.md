@@ -1,27 +1,53 @@
-# JitsiTestApp
+# Jitsi Test (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+![US](https://www.stevenskelton.ca/flag-icon/png/36/country-4x3/us.png)
 
-## Development server
+**A web application written in Angular framework that implements the basic functionality of the open source video conferencing API called Jitsi**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Starting project
+-
 
-## Code scaffolding
+Set the repository's root directory as the base.
+Before starting the project for the first time, the following command must be run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm install`
 
-## Build
+The project can be started from Visual Studio Code, under the Run and Debug menu item, or from the terminal with the following command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`npm run start`
 
-## Running unit tests
+It can then be opened manually from `http://localhost:4200`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+In order for the microphone and camera to be detected in the browser, their use must be enabled on the given page at first launch.
 
-## Running end-to-end tests
+Other information
+-
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+I was done with the project in 3 hours. I dragged the API into the project from an external script and started it in the `app.component.ts` file. I didn't log in in any way, I just wanted to create the basic functionality in the start window of the meeting. Below the meeting interface, I have written some data in tables (at startup or by pressing buttons), which can already be requested via the API in this state.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![HU](https://www.stevenskelton.ca/flag-icon/png/36/country-4x3/hu.png)
+
+**Angular frameworkben írt webalkalmazás, amely a Jitsi nevű, nyílt forráskódú videókonferencia API alapvető működését implementálja**
+
+Projekt elindítása
+-
+
+A repo gyökérmappája legyen a projekt alapja.
+A projekt első indítása előtt futtatni kell az alábbi parancsot:
+
+`npm install`
+
+A projekt indítható Visual Studio Code-ból, Run and Debug menüpont alól, vagy terminálból az alábbi paranccsal:
+
+`npm run start`
+
+Utána megnyitható manuálisan a `http://localhost:4200` címről.
+
+A böngészőben a mikrofon és kamera észleléséhez első indításkor engedélyezni kell azok használatát az adott lapon.
+
+Egyéb tudnivalók
+-
+
+A projekttel kb. 3 óra alatt készültem el. External scriptről behúztam a projektbe az API-t, és elindítottam az `app.component.ts` fájlban. Nem jelentkeztem be semmilyen módon, csak a meeting indulási ablakában lévő működést szerettem volna elérni. A meeting felület alá táblázatokba kiírtam néhány adatot (indításkor vagy gombok megnyomásával), amik már ebben az állapotban lekérhetőek az API-n keresztül.
